@@ -121,6 +121,13 @@
       line-height: 1.2;
     }
 
+    .redirect-note {
+      margin: 0 0 20px 0;
+      font-size: 16px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
     .btn-group {
       display: flex;
       flex-direction: column;
@@ -323,9 +330,10 @@
     <section class="hero-card">
       <img class="avatar" src="avatar.jpg" alt="Avatar" />
       <h1 class="contact-name">Nor Syahida Hidayah binti Chamli</h1>
+      <p class="redirect-note">Redirecting you to WhatsApp...</p>
 
       <div class="btn-group">
-        <a class="btn btn-primary" href="https://wa.me/601161800791?text=saya%20ingin%20tahu%20lebih%20lanjut" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-primary" href="https://wa.me/601161800791?text=Hello%21%20Can%20I%20get%20more%20info%20on%20this%3F" target="_blank" rel="noopener noreferrer">
           Open app
         </a>
 
@@ -393,5 +401,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const whatsappUrl = "https://wa.me/601161800791?text=Hello%21%20Can%20I%20get%20more%20info%20on%20this%3F";
+
+    setTimeout(function () {
+      window.location.href = whatsappUrl;
+    }, 1000);
+  </script>
 </body>
 </html>
